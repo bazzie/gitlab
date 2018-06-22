@@ -4,5 +4,18 @@
 #
 # @example
 #   include gitlab::install
-class gitlab::install {
+class gitlab::install (
+
+  $manage_repo = $gitlab::manage_repo,
+  $edition = $gitlab::edition
+
+){
+
+  if $gitlab::manage_repo == true {
+  }    
+
+
+
+ 
+
 }
